@@ -173,6 +173,7 @@ footer a{
     }
     .izquierda{
         width: 90%;
+        padding: 20px;
     }
     .izquierda textarea{
         padding: 3%;
@@ -180,7 +181,7 @@ footer a{
     .derecha{
         width: 90%;
         justify-content: center;
-        padding: 20px 20px 20px 30px;
+        padding: 20px 20px 20px 20px;
         min-height: 550px;
     }
     .derecha .card.shadow{
