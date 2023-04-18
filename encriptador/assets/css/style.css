@@ -1,21 +1,27 @@
 body, html{
-    font-family: 'Dongle', sans-serif;
+    font-family: 'Nunito', sans-serif;
     background-color: rgb(248, 248, 248);
     height: 100%;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 nav{
     max-height: 10%;
 }
+p{
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: justify;
+}
 nav a{
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 200px;
+    max-width:  360px;
     text-decoration: none;
     color: #52b397;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bolder;
     max-height: 100%;
 }
@@ -26,19 +32,21 @@ nav a:hover{
 }
 main{
     display: flex;
+    width: 100%;
+    padding: 0 20px 0 0;
     height: 90%;
 }
 .izquierda{
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 70%;
     justify-content: center;
     text-align: center;
-    padding: 20px 40px 20px 20px;
+    padding: 20px 60px 20px 20px;
 }
 .derecha{
-    width: 25%;
-    padding: 20px;
+    width: 20%;
+    padding: 20px 0px 20px 20px;
 }
 .izquierda textarea{
     width: 100%;
@@ -53,9 +61,14 @@ main{
 .card{
     background-color: #fff;
     border-radius: 20px;
-    height: 100%;
+    min-height: 90%;
+    overflow: auto;
     width: 100%;
+    padding: 20px 10px;
     position: relative;
+}
+.text-center{
+    text-align: center;
 }
 
 .shadow{
@@ -101,3 +114,85 @@ button:hover{
     right: 0;
     margin: auto;
 }
+.hidden{
+    display: none;
+}
+.ishidden{
+    opacity: 0;
+}
+.img-container{
+    width: 100%;
+    text-align: center;
+}
+.title{
+    font-size: 2em;
+    font-weight: bolder;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+footer a{
+    text-decoration: none;
+    color: #447466;
+    font-size: 1em;
+    font-weight: bold;
+}
+#encriptado.ishidden{
+    padding: 0;
+    margin: 0;
+}
+#etiqueta.ishidden{
+    padding: 0;
+    margin: 0;
+}
+#etiqueta{
+    font-weight: bold;
+    margin: 5px;
+    font-size: 1.5em;
+    padding: 10px 20px 0px 20px;
+}
+#encriptado{
+    padding: 0px 20px;
+    margin: 5px;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #447466;
+}
+
+
+@media only screen and (max-width: 1024px){
+    main{
+        flex: 1;
+        flex-direction: column;
+        height: 90%;
+        padding: 0;
+    }
+    .izquierda{
+        width: 90%;
+    }
+    .izquierda textarea{
+        padding: 3%;
+    }
+    .derecha{
+        width: 90%;
+        justify-content: center;
+        padding: 20px 20px 20px 30px;
+        min-height: 950px;
+    }
+    .derecha .card.shadow{
+        width: 100%;
+        min-height: 900px;
+    }
+    .button-bottom{
+        position: absolute;
+        bottom: 3%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+
+  
