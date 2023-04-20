@@ -4,9 +4,6 @@ body, html{
     height: auto;
 }
 
-nav{
-    max-height: 10%;
-}
 p{
     font-size: 1rem;
     font-weight: 300;
@@ -21,7 +18,7 @@ nav a{
     color: #52b397;
     font-size: 2em;
     font-weight: bolder;
-    max-height: 100%;
+    height: auto;
 }
 nav a:hover{
     text-decoration: none;
@@ -31,7 +28,7 @@ nav a:hover{
 main{
     display: flex;
     width: 100%;
-    padding: 0 20px 0 0;
+    padding: 20px;
     height: 90%;
 }
 .izquierda{
@@ -40,7 +37,7 @@ main{
     width: 70%;
     justify-content: center;
     text-align: center;
-    padding: 20px 60px 20px 20px;
+    padding: 20px 60px 20px 0px;
 }
 .derecha{
     width: 20%;
@@ -166,28 +163,33 @@ footer a{
         font-size: 1em;
     }
     main{
-        flex: 1;
-        flex-direction: column;
-        height: 90%;
+        width: 100%;
         padding: 0;
+        flex-direction: column;
     }
     .izquierda{
-        width: 90%;
-        padding: 20px;
+        width: auto;
+        padding: 20px ;
     }
     .izquierda textarea{
+        width: auto;
         padding: 3%;
     }
     .derecha{
-        width: 90%;
-        justify-content: center;
-        padding: 20px 20px 20px 20px;
+        margin: 0;
+        width: auto;
+        padding: 20px;
         min-height: 550px;
     }
     .derecha .card.shadow{
-        width: 100%;
+        width: auto;
         min-height: 500px;
     }
+    .derecha .card.shadow svg > image{
+        width: 220px;
+        height: 220px;
+    }
+
     .button-bottom{
         position: absolute;
         bottom: 3%;
